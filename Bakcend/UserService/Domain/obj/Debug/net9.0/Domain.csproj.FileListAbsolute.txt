@@ -1,0 +1,12 @@
+F:\Messanger 3.0\Bakcend\UserService\Domain\bin\Debug\net9.0\Domain.deps.json
+F:\Messanger 3.0\Bakcend\UserService\Domain\bin\Debug\net9.0\Domain.dll
+F:\Messanger 3.0\Bakcend\UserService\Domain\bin\Debug\net9.0\Domain.pdb
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.dll
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\refint\Domain.dll
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\Domain.pdb
+F:\Messanger 3.0\Bakcend\UserService\Domain\obj\Debug\net9.0\ref\Domain.dll

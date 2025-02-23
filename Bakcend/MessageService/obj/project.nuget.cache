@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "84/Lv8rnRY0=",
+  "success": true,
+  "projectFilePath": "F:\\Messanger 3.0\\Bakcend\\MessageService\\MessageService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\istep\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\istep\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\istep\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\istep\\.nuget\\packages\\scalar.aspnetcore\\2.0.18\\scalar.aspnetcore.2.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

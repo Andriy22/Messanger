@@ -1,0 +1,1065 @@
+2025-02-23 14:51:47.126 +02:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-02-23 14:51:47.296 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-02-23 14:51:47.305 +02:00 [INF] Applying migration '20250223125133_Init'.
+2025-02-23 15:33:28.706 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:33:28.754 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:33:28.917 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:33:29.023 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:33:29.023 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:33:29.023 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:34:16.524 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:34:16.563 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:34:16.652 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:34:16.742 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:34:16.742 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:34:16.742 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:34:37.434 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:34:37.473 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:34:37.570 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:34:37.571 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:34:37.654 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:34:37.654 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:34:37.654 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:35:24.087 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:35:24.126 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:35:24.230 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:35:24.230 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:35:24.318 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:35:24.318 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:35:24.318 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:35:35.451 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:35:35.491 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:35:35.589 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:35:35.589 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:35:35.676 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:35:35.676 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:35:35.677 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:42:35.023 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:42:35.062 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:42:35.163 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:42:35.163 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:42:35.247 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:42:35.247 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:42:35.247 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:42:50.964 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/ - null null
+2025-02-23 15:42:51.051 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/ - 404 0 null 87.8134ms
+2025-02-23 15:42:51.054 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7011/, Response status code: 404
+2025-02-23 15:42:54.373 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:42:54.378 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:42:54.411 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:42:54.415 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:42:54.416 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 43.1627ms
+2025-02-23 15:42:54.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:42:54.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:42:54.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:42:54.438 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:42:54.438 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:42:54.441 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 6.1377ms
+2025-02-23 15:42:54.510 +02:00 [INF] Sending file with download name ''.
+2025-02-23 15:42:54.510 +02:00 [INF] Sending file with download name ''.
+2025-02-23 15:42:54.512 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:42:54.512 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 200 390 text/javascript 77.0297ms
+2025-02-23 15:42:54.524 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:42:54.525 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 200 2723133 text/javascript 89.6729ms
+2025-02-23 15:42:54.673 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:42:54.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.6015ms
+2025-02-23 15:42:54.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:42:54.720 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:42:54.737 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:42:54.737 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 16.7597ms
+2025-02-23 15:42:55.070 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/favicon.ico - null null
+2025-02-23 15:42:55.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/favicon.ico - 404 0 null 0.5122ms
+2025-02-23 15:42:55.071 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7011/favicon.ico, Response status code: 404
+2025-02-23 15:43:03.603 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:03.605 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:03.606 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:03.606 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:03.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 3.2081ms
+2025-02-23 15:43:03.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:03.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:03.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:03.626 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:03.626 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:03.626 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.5184ms
+2025-02-23 15:43:03.628 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:03.628 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:03.628 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:03.628 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:03.628 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 2.7926ms
+2025-02-23 15:43:03.628 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 2.8588ms
+2025-02-23 15:43:03.685 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:03.690 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.3842ms
+2025-02-23 15:43:03.716 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:03.717 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:03.717 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:03.717 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.9573ms
+2025-02-23 15:43:04.258 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:04.259 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.259 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:04.260 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.8407ms
+2025-02-23 15:43:04.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:04.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:04.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:04.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.3526ms
+2025-02-23 15:43:04.278 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.278 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.279 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.279 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.279 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.279 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.6351ms
+2025-02-23 15:43:04.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.636ms
+2025-02-23 15:43:04.329 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:04.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.883ms
+2025-02-23 15:43:04.362 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:04.362 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.362 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.362 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4988ms
+2025-02-23 15:43:04.499 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:04.500 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.501 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:04.501 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.501 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.541ms
+2025-02-23 15:43:04.519 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:04.519 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:04.520 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:04.520 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.520 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.520 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.520 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.520 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.520 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.520 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.4897ms
+2025-02-23 15:43:04.520 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.4867ms
+2025-02-23 15:43:04.520 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2123ms
+2025-02-23 15:43:04.573 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:04.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.3311ms
+2025-02-23 15:43:04.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:04.597 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.597 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4837ms
+2025-02-23 15:43:04.721 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:04.722 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.722 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:04.722 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:04.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.6082ms
+2025-02-23 15:43:04.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:04.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:04.740 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:04.740 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.740 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:04.740 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.740 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:04.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3458ms
+2025-02-23 15:43:04.740 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:04.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1828ms
+2025-02-23 15:43:04.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1494ms
+2025-02-23 15:43:04.796 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:04.799 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.8864ms
+2025-02-23 15:43:04.823 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:04.823 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.824 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:04.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4508ms
+2025-02-23 15:43:05.061 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:05.071 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.071 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:05.072 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.072 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 10.2646ms
+2025-02-23 15:43:05.085 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:05.086 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.086 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.086 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.086 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3888ms
+2025-02-23 15:43:05.089 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:05.089 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:05.089 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.089 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.089 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.118ms
+2025-02-23 15:43:05.089 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.089 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3961ms
+2025-02-23 15:43:05.141 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:05.143 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0851ms
+2025-02-23 15:43:05.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:05.162 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.162 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.162 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.5194ms
+2025-02-23 15:43:05.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:05.230 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.230 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:05.230 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.230 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2094ms
+2025-02-23 15:43:05.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:05.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:05.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:05.249 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.249 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2247ms
+2025-02-23 15:43:05.249 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.249 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.249 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.249 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3245ms
+2025-02-23 15:43:05.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3087ms
+2025-02-23 15:43:05.298 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:05.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.1916ms
+2025-02-23 15:43:05.319 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:05.320 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.320 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.320 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.787ms
+2025-02-23 15:43:05.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:05.555 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.555 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:05.555 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.555 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.5455ms
+2025-02-23 15:43:05.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:05.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:05.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:05.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2235ms
+2025-02-23 15:43:05.576 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.576 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.576 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.576 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.576 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.576 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3985ms
+2025-02-23 15:43:05.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3954ms
+2025-02-23 15:43:05.635 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:05.637 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.9013ms
+2025-02-23 15:43:05.657 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:05.658 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.658 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.658 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3983ms
+2025-02-23 15:43:05.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:05.732 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.732 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:05.732 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.732 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3853ms
+2025-02-23 15:43:05.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:05.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:05.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:05.750 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.221ms
+2025-02-23 15:43:05.750 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.750 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.750 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.750 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.750 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.750 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.750 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3595ms
+2025-02-23 15:43:05.750 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3557ms
+2025-02-23 15:43:05.813 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:05.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.2011ms
+2025-02-23 15:43:05.834 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:05.835 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.835 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:05.835 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4105ms
+2025-02-23 15:43:05.909 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:05.910 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.910 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:05.910 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:05.910 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2605ms
+2025-02-23 15:43:05.934 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:05.934 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:05.934 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:05.934 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.934 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.934 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1963ms
+2025-02-23 15:43:05.935 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.935 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:05.935 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:05.935 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:05.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2639ms
+2025-02-23 15:43:05.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2913ms
+2025-02-23 15:43:05.993 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:05.995 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0498ms
+2025-02-23 15:43:06.019 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:06.019 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:06.019 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:06.019 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3934ms
+2025-02-23 15:43:06.717 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:06.718 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:06.718 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:06.718 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:06.718 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.5943ms
+2025-02-23 15:43:06.737 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:06.737 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:06.737 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:06.737 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:06.737 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:06.737 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:06.737 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:06.737 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:06.737 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2835ms
+2025-02-23 15:43:06.737 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2834ms
+2025-02-23 15:43:06.737 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:06.737 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1113ms
+2025-02-23 15:43:06.780 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:06.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.8768ms
+2025-02-23 15:43:06.801 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:06.801 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:06.801 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:06.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3373ms
+2025-02-23 15:43:07.017 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:07.018 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.018 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:07.018 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.018 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.145ms
+2025-02-23 15:43:07.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:07.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:07.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:07.033 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1945ms
+2025-02-23 15:43:07.033 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.033 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.033 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.033 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.033 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.275ms
+2025-02-23 15:43:07.033 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2997ms
+2025-02-23 15:43:07.082 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:07.084 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0476ms
+2025-02-23 15:43:07.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:07.113 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.113 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.113 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3852ms
+2025-02-23 15:43:07.221 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:07.222 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.222 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:07.222 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.222 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3719ms
+2025-02-23 15:43:07.243 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:07.243 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:07.243 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.243 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.243 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.243 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.243 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.243 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.243 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2518ms
+2025-02-23 15:43:07.243 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2513ms
+2025-02-23 15:43:07.243 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:07.244 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1014ms
+2025-02-23 15:43:07.299 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:07.301 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0868ms
+2025-02-23 15:43:07.316 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:07.317 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.317 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3848ms
+2025-02-23 15:43:07.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:07.561 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.561 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:07.561 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.561 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.4524ms
+2025-02-23 15:43:07.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:07.597 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:07.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:07.597 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.597 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.597 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.597 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.597 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2902ms
+2025-02-23 15:43:07.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1442ms
+2025-02-23 15:43:07.597 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1506ms
+2025-02-23 15:43:07.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:07.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.8508ms
+2025-02-23 15:43:07.664 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:07.664 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.665 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3571ms
+2025-02-23 15:43:07.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:07.794 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.794 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:07.794 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:07.795 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.0302ms
+2025-02-23 15:43:07.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:07.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:07.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:07.814 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.814 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2119ms
+2025-02-23 15:43:07.814 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.814 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:07.814 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:07.814 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:07.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2831ms
+2025-02-23 15:43:07.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2691ms
+2025-02-23 15:43:07.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:07.866 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.9546ms
+2025-02-23 15:43:07.886 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:07.887 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.887 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:07.887 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.5162ms
+2025-02-23 15:43:08.225 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:08.226 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.226 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:08.226 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.226 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2163ms
+2025-02-23 15:43:08.241 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:08.242 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:08.242 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:08.242 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.242 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.242 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.242 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.242 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.242 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1332ms
+2025-02-23 15:43:08.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2425ms
+2025-02-23 15:43:08.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.162ms
+2025-02-23 15:43:08.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:08.288 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0298ms
+2025-02-23 15:43:08.319 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:08.319 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.319 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.319 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3653ms
+2025-02-23 15:43:08.467 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:08.469 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.469 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:08.469 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.469 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3698ms
+2025-02-23 15:43:08.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:08.491 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.491 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.491 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3115ms
+2025-02-23 15:43:08.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:08.491 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.491 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:08.491 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.491 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.492 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1719ms
+2025-02-23 15:43:08.492 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1238ms
+2025-02-23 15:43:08.543 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:08.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.5988ms
+2025-02-23 15:43:08.566 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:08.567 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.567 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.567 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4774ms
+2025-02-23 15:43:08.716 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:08.717 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.717 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:08.718 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.718 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.0918ms
+2025-02-23 15:43:08.739 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:08.739 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.739 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.739 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.739 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:08.739 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:08.739 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3426ms
+2025-02-23 15:43:08.740 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1072ms
+2025-02-23 15:43:08.740 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.740 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.740 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1335ms
+2025-02-23 15:43:08.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:08.795 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0771ms
+2025-02-23 15:43:08.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:08.815 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.815 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:08.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3654ms
+2025-02-23 15:43:08.948 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:08.949 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.949 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:08.949 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:08.949 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2747ms
+2025-02-23 15:43:08.965 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:08.965 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:08.965 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.965 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.966 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.966 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:08.966 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:08.966 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:08.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:08.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2631ms
+2025-02-23 15:43:08.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1887ms
+2025-02-23 15:43:08.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1335ms
+2025-02-23 15:43:09.030 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:09.032 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.3178ms
+2025-02-23 15:43:09.056 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:09.056 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.056 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.056 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3671ms
+2025-02-23 15:43:09.170 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:09.171 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.171 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:09.171 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.171 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.03ms
+2025-02-23 15:43:09.190 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:09.190 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:09.190 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.190 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.190 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.190 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.190 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.190 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.190 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:09.190 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2043ms
+2025-02-23 15:43:09.190 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2043ms
+2025-02-23 15:43:09.190 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1011ms
+2025-02-23 15:43:09.234 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:09.237 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.2365ms
+2025-02-23 15:43:09.259 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:09.259 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.259 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.259 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3551ms
+2025-02-23 15:43:09.587 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:09.588 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.588 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:09.588 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.588 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.271ms
+2025-02-23 15:43:09.605 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:09.605 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.605 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.605 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2006ms
+2025-02-23 15:43:09.605 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:09.605 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:09.606 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.606 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.606 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.606 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.0749ms
+2025-02-23 15:43:09.606 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1139ms
+2025-02-23 15:43:09.652 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:09.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.283ms
+2025-02-23 15:43:09.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:09.683 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.683 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.2858ms
+2025-02-23 15:43:09.885 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:09.886 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.886 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:09.886 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:09.886 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2019ms
+2025-02-23 15:43:09.901 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:09.901 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.902 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:09.902 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:09.902 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.902 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.902 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:09.902 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:09.902 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:09.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2581ms
+2025-02-23 15:43:09.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.0727ms
+2025-02-23 15:43:09.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1269ms
+2025-02-23 15:43:09.953 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:09.955 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.1054ms
+2025-02-23 15:43:09.976 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:09.976 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.977 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:09.977 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.2761ms
+2025-02-23 15:43:10.176 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:10.177 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.177 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:10.178 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3666ms
+2025-02-23 15:43:10.194 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:10.194 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:10.194 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:10.194 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.194 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.194 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.194 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.194 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.194 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.1861ms
+2025-02-23 15:43:10.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1815ms
+2025-02-23 15:43:10.194 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1883ms
+2025-02-23 15:43:10.244 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:10.247 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.7775ms
+2025-02-23 15:43:10.267 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:10.267 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:10.267 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:10.267 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3054ms
+2025-02-23 15:43:10.600 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:10.601 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.601 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:10.601 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.601 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.2383ms
+2025-02-23 15:43:10.621 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:10.621 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:10.621 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:10.621 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.621 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.622 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.622 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.622 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.622 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.622 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1829ms
+2025-02-23 15:43:10.622 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.1864ms
+2025-02-23 15:43:10.622 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2045ms
+2025-02-23 15:43:10.669 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:10.672 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.0508ms
+2025-02-23 15:43:10.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:10.691 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:10.691 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:10.691 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3138ms
+2025-02-23 15:43:10.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:10.968 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.969 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:10.969 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:10.969 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.1433ms
+2025-02-23 15:43:10.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:10.988 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:10.988 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:10.988 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:10.988 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2278ms
+2025-02-23 15:43:10.988 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:10.988 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:10.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1117ms
+2025-02-23 15:43:10.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1065ms
+2025-02-23 15:43:11.029 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:11.031 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.9404ms
+2025-02-23 15:43:11.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:11.058 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:11.059 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:11.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3321ms
+2025-02-23 15:43:11.217 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:43:11.217 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:11.218 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:43:11.218 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:43:11.218 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.0135ms
+2025-02-23 15:43:11.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:43:11.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:43:11.237 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:11.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:43:11.237 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:11.238 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:43:11.238 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:11.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.2882ms
+2025-02-23 15:43:11.238 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:43:11.238 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:43:11.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.1477ms
+2025-02-23 15:43:11.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1966ms
+2025-02-23 15:43:11.290 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:43:11.291 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1.8458ms
+2025-02-23 15:43:11.311 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:43:11.311 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:11.311 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:43:11.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4241ms
+2025-02-23 15:44:07.537 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:44:07.592 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:44:07.754 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:44:07.754 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:44:07.876 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:44:07.877 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:44:07.877 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:44:10.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:10.625 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:10.655 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:10.660 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:10.662 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 113.5971ms
+2025-02-23 15:44:10.676 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:10.676 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:10.676 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:10.678 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:10.682 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:10.693 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:10.693 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:10.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 17.0445ms
+2025-02-23 15:44:10.693 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:10.693 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:10.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 17.3942ms
+2025-02-23 15:44:10.693 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 17.3961ms
+2025-02-23 15:44:10.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:10.752 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.5439ms
+2025-02-23 15:44:10.757 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:10.759 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:10.784 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:10.784 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 26.82ms
+2025-02-23 15:44:11.422 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:11.424 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:11.425 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:11.425 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:11.425 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 3.6147ms
+2025-02-23 15:44:11.442 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:11.443 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:11.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:11.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:11.443 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:11.443 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:11.443 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:11.443 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:11.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.6682ms
+2025-02-23 15:44:11.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2816ms
+2025-02-23 15:44:11.443 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:11.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.4169ms
+2025-02-23 15:44:11.495 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:11.508 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.2282ms
+2025-02-23 15:44:11.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:11.528 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:11.528 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:11.528 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.861ms
+2025-02-23 15:44:11.854 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:11.855 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:11.855 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:11.856 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:11.856 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.6225ms
+2025-02-23 15:44:11.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:11.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:11.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:11.872 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:11.872 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:11.872 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:11.872 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:11.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.3332ms
+2025-02-23 15:44:11.872 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:11.873 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:11.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.5244ms
+2025-02-23 15:44:11.873 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.5429ms
+2025-02-23 15:44:11.915 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:11.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.6398ms
+2025-02-23 15:44:11.938 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:11.938 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:11.938 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:11.938 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.5838ms
+2025-02-23 15:44:12.108 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:12.109 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.110 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:12.110 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.4116ms
+2025-02-23 15:44:12.127 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:12.127 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.127 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.127 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.127 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:12.127 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.6769ms
+2025-02-23 15:44:12.127 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:12.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1195ms
+2025-02-23 15:44:12.128 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.128 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.128 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2689ms
+2025-02-23 15:44:12.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:12.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.679ms
+2025-02-23 15:44:12.209 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:12.209 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.210 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.210 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4968ms
+2025-02-23 15:44:12.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:12.325 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.326 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:12.326 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.4338ms
+2025-02-23 15:44:12.345 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:12.345 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:12.345 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:12.346 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.346 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.346 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.346 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.346 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.346 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.3686ms
+2025-02-23 15:44:12.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.4615ms
+2025-02-23 15:44:12.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.4629ms
+2025-02-23 15:44:12.403 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:12.408 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1706ms
+2025-02-23 15:44:12.420 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:12.420 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.420 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.420 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4507ms
+2025-02-23 15:44:12.507 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:12.508 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.508 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:12.508 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:12.508 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3956ms
+2025-02-23 15:44:12.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:12.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:12.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:12.529 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.529 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2336ms
+2025-02-23 15:44:12.529 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.529 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.529 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:12.529 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:12.529 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:12.529 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3439ms
+2025-02-23 15:44:12.529 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3477ms
+2025-02-23 15:44:12.582 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:12.588 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.331ms
+2025-02-23 15:44:12.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:12.607 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.607 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:12.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4748ms
+2025-02-23 15:44:13.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:13.237 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:13.238 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:13.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.6467ms
+2025-02-23 15:44:23.611 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:23.612 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:23.612 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:23.612 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:23.613 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.6194ms
+2025-02-23 15:44:23.630 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:23.630 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:23.630 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:23.630 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:23.630 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2338ms
+2025-02-23 15:44:23.630 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:23.630 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:23.630 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:23.630 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:23.630 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:23.630 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3619ms
+2025-02-23 15:44:23.630 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.3547ms
+2025-02-23 15:44:23.680 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:23.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.2608ms
+2025-02-23 15:44:23.702 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:23.702 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:23.702 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:23.702 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4284ms
+2025-02-23 15:44:24.159 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:24.161 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.161 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:24.161 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.161 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.5731ms
+2025-02-23 15:44:24.181 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:24.181 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:24.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.2172ms
+2025-02-23 15:44:24.181 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:24.182 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.182 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.182 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.182 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.182 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.182 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.4171ms
+2025-02-23 15:44:24.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.4253ms
+2025-02-23 15:44:24.223 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:24.226 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.5925ms
+2025-02-23 15:44:24.245 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:24.245 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.245 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3982ms
+2025-02-23 15:44:24.548 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:24.549 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.549 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:24.549 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.549 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.4409ms
+2025-02-23 15:44:24.566 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:24.566 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:24.566 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:24.566 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.566 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.566 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.566 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.566 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.566 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.566 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3174ms
+2025-02-23 15:44:24.566 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2814ms
+2025-02-23 15:44:24.566 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1656ms
+2025-02-23 15:44:24.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:24.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 2.1824ms
+2025-02-23 15:44:24.636 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:24.637 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.637 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.637 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.4733ms
+2025-02-23 15:44:24.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:24.722 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.722 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:24.722 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:24.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 1.3002ms
+2025-02-23 15:44:24.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:24.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:24.751 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.751 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.751 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.751 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:24.751 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:24.751 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:24.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 0.3146ms
+2025-02-23 15:44:24.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 0.2245ms
+2025-02-23 15:44:24.751 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:24.752 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 0.1998ms
+2025-02-23 15:44:24.794 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:24.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.545ms
+2025-02-23 15:44:24.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:24.815 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.815 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:24.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 0.3893ms
+2025-02-23 15:44:47.847 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-23 15:44:47.882 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:44:47.995 +02:00 [INF] Now listening on: https://localhost:7011
+2025-02-23 15:44:47.996 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-23 15:44:48.081 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:44:48.081 +02:00 [INF] Hosting environment: Development
+2025-02-23 15:44:48.081 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-23 15:44:49.055 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/v1 - null null
+2025-02-23 15:44:49.108 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:49.129 +02:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-02-23 15:44:49.134 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-02-23 15:44:49.136 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/v1 - 200 null text/html 81.6126ms
+2025-02-23 15:44:49.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.js - null null
+2025-02-23 15:44:49.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - null null
+2025-02-23 15:44:49.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-23 15:44:49.157 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:49.157 +02:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:49.160 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 5.0801ms
+2025-02-23 15:44:49.160 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:49.160 +02:00 [INF] Setting HTTP status code 304.
+2025-02-23 15:44:49.161 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-02-23 15:44:49.161 +02:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-02-23 15:44:49.161 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.js - 304 null null 5.8318ms
+2025-02-23 15:44:49.161 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/scalar/scalar.aspnetcore.js - 304 null null 5.8331ms
+2025-02-23 15:44:49.222 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/_vs/browserLink - null null
+2025-02-23 15:44:49.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9489ms
+2025-02-23 15:44:49.252 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7011/openapi/v1.json - null null
+2025-02-23 15:44:49.254 +02:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:49.310 +02:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-02-23 15:44:49.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7011/openapi/v1.json - 200 null application/json;charset=utf-8 58.6333ms

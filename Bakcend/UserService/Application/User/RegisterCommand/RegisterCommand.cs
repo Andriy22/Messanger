@@ -1,0 +1,10 @@
+﻿using MediatR;
+
+namespace Application.User.RegisterCommand;
+
+public class RegisterCommand : IRequest<string>
+{
+    public required string Email { get; set; }
+    public required string Password { get; set; }
+    public required string DisplayName { get; set; }
+}
