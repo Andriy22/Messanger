@@ -17,3 +17,4 @@ F:\Messanger 3.0\Bakcend\UserService\Persistence\obj\Debug\net9.0\refint\Persist
 F:\Messanger 3.0\Bakcend\UserService\Persistence\obj\Debug\net9.0\Persistence.pdb
 F:\Messanger 3.0\Bakcend\UserService\Persistence\obj\Debug\net9.0\Persistence.genruntimeconfig.cache
 F:\Messanger 3.0\Bakcend\UserService\Persistence\obj\Debug\net9.0\ref\Persistence.dll
+F:\Messanger 3.0\Bakcend\UserService\Persistence\obj\Debug\net9.0\Persistence.sourcelink.json

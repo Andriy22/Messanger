@@ -13,3 +13,4 @@ F:\Messanger 3.0\Bakcend\UserService\Application\obj\Debug\net9.0\Application.dl
 F:\Messanger 3.0\Bakcend\UserService\Application\obj\Debug\net9.0\refint\Application.dll
 F:\Messanger 3.0\Bakcend\UserService\Application\obj\Debug\net9.0\Application.pdb
 F:\Messanger 3.0\Bakcend\UserService\Application\obj\Debug\net9.0\ref\Application.dll
+F:\Messanger 3.0\Bakcend\UserService\Application\obj\Debug\net9.0\Application.sourcelink.json

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\services\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:services\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\endpoints\\users\\registerendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:endpoints\\users\\registerendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\endpoints\\iendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:endpoints\\iendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\endpoints\\iendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|solutionrelative:endpoints\\iendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D111D935-8790-48EC-ACD3-8A775640337F}|UserService.csproj|f:\\messanger 3.0\\bakcend\\userservice\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -101,7 +105,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,20 +113,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-23T13:35:18.613Z",
+              "DocumentIndex": 1,
+              "Title": "CurrentUserService.cs",
+              "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Services\\CurrentUserService.cs",
+              "RelativeDocumentMoniker": "Services\\CurrentUserService.cs",
+              "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Services\\CurrentUserService.cs",
+              "RelativeToolTip": "Services\\CurrentUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T13:57:53.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserService",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\UserService.csproj",
               "RelativeDocumentMoniker": "UserService.csproj",
@@ -134,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserService.http",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\UserService.http",
               "RelativeDocumentMoniker": "UserService.http",
@@ -147,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "RegisterCommand.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\User\\RegisterCommand\\RegisterCommand.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\User\\RegisterCommand\\RegisterCommand.cs",
@@ -159,20 +163,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EndpointExtensions.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Extensions\\EndpointExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\EndpointExtensions.cs",
               "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Extensions\\EndpointExtensions.cs",
               "RelativeToolTip": "Extensions\\EndpointExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T12:54:15.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "20250223125133_Init.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Persistence\\Migrations\\20250223125133_Init.cs",
               "RelativeDocumentMoniker": "..\\..\\Persistence\\Migrations\\20250223125133_Init.cs",
@@ -184,20 +188,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterEndpoint.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Endpoints\\Users\\RegisterEndpoint.cs",
               "RelativeDocumentMoniker": "Endpoints\\Users\\RegisterEndpoint.cs",
               "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Endpoints\\Users\\RegisterEndpoint.cs",
               "RelativeToolTip": "Endpoints\\Users\\RegisterEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T12:48:36.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IEndpoint.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Endpoints\\IEndpoint.cs",
               "RelativeDocumentMoniker": "Endpoints\\IEndpoint.cs",
@@ -210,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -222,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Persistence.csproj",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Persistence\\Persistence.csproj",
               "RelativeDocumentMoniker": "..\\..\\Persistence\\Persistence.csproj",
@@ -234,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Dockerfile",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\Dockerfile",
               "RelativeDocumentMoniker": "..\\Dockerfile",
@@ -247,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Persistence\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\..\\Persistence\\DependencyInjection.cs",
@@ -259,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Persistence\\DbInitializer.cs",
               "RelativeDocumentMoniker": "..\\..\\Persistence\\DbInitializer.cs",
@@ -271,20 +275,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAWwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAD0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T11:44:09.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-23T13:35:18.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "RegisterCommandValidator.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\User\\RegisterCommand\\RegisterCommandValidator.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\User\\RegisterCommand\\RegisterCommandValidator.cs",
@@ -296,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "WebAppLog-20250223.txt",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\WebAppLog-20250223.txt",
               "RelativeDocumentMoniker": "WebAppLog-20250223.txt",
@@ -307,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "RegisterCommandHandler.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\User\\RegisterCommand\\RegisterCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\User\\RegisterCommand\\RegisterCommandHandler.cs",
@@ -319,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AssemblyMappingProfile.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Common\\Mappings\\AssemblyMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Common\\Mappings\\AssemblyMappingProfile.cs",
@@ -331,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\DependencyInjection.cs",
@@ -343,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ValidationBehavior.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Common\\Behaviors\\ValidationBehavior.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Common\\Behaviors\\ValidationBehavior.cs",
@@ -355,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AppUser.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Domain\\AppUser.cs",
               "RelativeDocumentMoniker": "..\\..\\Domain\\AppUser.cs",
@@ -367,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DataContext.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Persistence\\DataContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Persistence\\DataContext.cs",
@@ -379,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "LoggingBehavior.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Common\\Behaviors\\LoggingBehavior.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Common\\Behaviors\\LoggingBehavior.cs",
@@ -391,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IMapWith.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Common\\Mappings\\IMapWith.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Common\\Mappings\\IMapWith.cs",
@@ -403,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ICurrentUserService.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Interfaces\\ICurrentUserService.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Interfaces\\ICurrentUserService.cs",
@@ -415,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IDataContext.cs",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\Application\\Interfaces\\IDataContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Application\\Interfaces\\IDataContext.cs",
@@ -427,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserService.csproj",
               "DocumentMoniker": "F:\\Messanger 3.0\\Bakcend\\UserService\\UserService\\UserService.csproj",
               "RelativeDocumentMoniker": "UserService.csproj",

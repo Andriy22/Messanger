@@ -8,6 +8,8 @@ using Scalar.AspNetCore;
 using Serilog;
 using Serilog.Events;
 using UserService.Extensions;
+using UserService.Middleware;
+using UserService.Options;
 using UserService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +32,9 @@ builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
 
 builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
+
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 
 builder.Services.AddCors(options =>
 {
@@ -48,7 +53,10 @@ builder.Host.UseSerilog(logger);
 
 var app = builder.Build();
 
-app.MapEndpints();
+// Add error handling middleware
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
+app.MapEndponts();
 
 using (var scope = app.Services.CreateScope())
 {

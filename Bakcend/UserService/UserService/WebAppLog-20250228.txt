@@ -1,0 +1,75 @@
+2025-02-28 23:36:28.499 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-28 23:36:28.566 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-28 23:36:28.790 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-28 23:36:28.791 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-28 23:36:28.791 +02:00 [INF] Hosting environment: Development
+2025-02-28 23:36:28.791 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-28 23:37:00.673 +02:00 [INF] Application is shutting down...
+2025-02-28 23:46:11.311 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-28 23:46:11.368 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-28 23:46:11.529 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-28 23:46:11.530 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-28 23:46:11.530 +02:00 [INF] Hosting environment: Development
+2025-02-28 23:46:11.530 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-28 23:46:12.746 +02:00 [INF] Application is shutting down...
+2025-02-28 23:52:24.253 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-02-28 23:52:24.307 +02:00 [INF] User profile is available. Using 'C:\Users\istep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-28 23:52:24.461 +02:00 [INF] Now listening on: http://localhost:5166
+2025-02-28 23:52:24.463 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-28 23:52:24.463 +02:00 [INF] Hosting environment: Development
+2025-02-28 23:52:24.463 +02:00 [INF] Content root path: F:\Messanger 3.0\Bakcend\UserService\UserService
+2025-02-28 23:52:28.743 +02:00 [INF] Application is shutting down...
