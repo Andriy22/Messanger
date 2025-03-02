@@ -36,7 +36,7 @@ public class Mocks
         }
     };
 
-    public static readonly List<Chat> CHATS = new List<Chat>()
+    public static readonly List<Chat> CHATS = new()
     {
         new Chat()
         {

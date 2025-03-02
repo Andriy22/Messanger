@@ -1,13 +1,16 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using System.Text.RegularExpressions;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class DynamicTextBox : MonoBehaviour
+public class DynamicTextBox : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private RectTransform _objectToScale;
     [SerializeField] private float _maxWidth = 500f; // Maximum width before wrapping
     [SerializeField] private float _padding = 10f;   // Padding around the text
+    
+    private TextMeshProUGUI _text;
 
     public string Text
     {
@@ -15,7 +18,7 @@ public class DynamicTextBox : MonoBehaviour
         set => SetText(value);
     }
 
-    private TextMeshProUGUI _text;
+    public TextMeshProUGUI TMPText => _text;
 
     private void Awake()
     {
@@ -42,7 +45,44 @@ public class DynamicTextBox : MonoBehaviour
     public void SetText(string newText)
     {
         _text.text = newText;
+        CheckLinks();
+
         AdjustSize();
         AdjustSize();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        int linkIndex = TMP_TextUtilities.FindIntersectingLink (_text, eventData.position, eventData.pressEventCamera);
+	
+    	if (linkIndex == -1)
+        {
+            return;
+        }
+
+        var linkInfo = _text.textInfo.linkInfo[linkIndex];
+		var selectedLink = linkInfo.GetLinkID();
+		
+        if (selectedLink != "") 
+        {
+			Debug.LogFormat ("Open link {0}", selectedLink);
+			Application.OpenURL (selectedLink);        
+		}
+    }
+
+    private string ShortLink(string link) 
+    {
+		return $"<#7f7fe5><u><link=\"{link}\">{link}</link></u></color>";
+	}        
+
+	// Check links in text
+	private void CheckLinks() 
+    {
+		var regx = new Regex ("((http://|https://|www\\.)([A-Z0-9.-:]{1,})\\.[0-9A-Z?;~&#=\\-_\\./]{2,})" , RegexOptions.IgnoreCase | RegexOptions.Singleline); 
+		var matches = regx.Matches (_text.text); 
+		foreach (Match match in matches)
+        {
+            _text.text = _text.text.Replace (match.Value, ShortLink(match.Value));
+        }
     }
 }
